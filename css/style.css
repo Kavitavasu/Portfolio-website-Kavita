@@ -1,3 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+
 body {
     font-family: 'Comme', sans-serif;
   }
@@ -32,7 +40,7 @@ body {
     font-weight: 400;
   }
   a {
-    color: #ff7f50;
+    color: #000;
     text-decoration: none; /* No underlining */
   }
   a:hover {
@@ -67,3 +75,79 @@ body {
   img {
     width: 100%;
   }
+  header {
+    background-color: #8EAF88;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 3px solid #4a4a4a;
+    text-align: center;
+  }
+  #hero{
+    
+    text-align: center;
+    background-color: #ffffff;
+  }
+
+  .social{
+   height: 40px;
+   margin: 16px; 
+   width:auto;
+ }
+
+ .container {
+  max-width: 1200px;
+}
+#work{
+  text-align: center;
+}
+
+#contact{
+  text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+/* Layout styling */
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+main {
+  padding-top: 133px;
+}
+
+#contact{
+ 
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+  text-align: center;
+  }
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > a {
+  display: inline-block;
+}
+
+nav > ul > a {
+  margin: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+ 
+}
+footer {
+  text-align: center;
+  background-color: #8EAF88;
+  }
+  #about{
+  display: inline-block;
+  }
+
+  
+  
