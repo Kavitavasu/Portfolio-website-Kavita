@@ -1,6 +1,11 @@
 * {
 	box-sizing: border-box;
 }
+
+.content {
+  margin-top: 75px;
+}
+
 *{
   margin:0;
   padding: 0;
@@ -12,7 +17,7 @@ body {
   body {
     background-color: #ffffff;
     font-family: 'Comme', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 18px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #4a4a4a;
@@ -20,25 +25,46 @@ body {
   
   h1, h2, h3, h4 {
     line-height: 1.4;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
   }
+
   h1 {
     font-size: 2.75em;
+    color: #1F3C65;
+    margin: 20px auto;
     font-weight: 700;
-  }
+    }
   
   h2 {
-    font-size: 2.25em;
-    font-weight: 700;
+    font-size: 1.6em;
+    color: #AC5D71;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 15px auto;
+    text-align: center;
   }
   
   h3 {
-    font-size: 1.75em;
-    font-weight: 400;
+    font-size: 1.4em;
+    color: #1F3C65;
+    letter-spacing: 0.05%;
+    font-weight: 500;
+    padding-top: 10px;
+    margin: 5px 0;
   }
+
   h4 {
-    font-size: 1.35em;
-    font-weight: 400;
+    font-size: 1em;
+    color: #1F3C65;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0
   }
+
   a {
     color: #000;
     text-decoration: none; /* No underlining */
@@ -75,17 +101,21 @@ body {
   img {
     width: 100%;
   }
+
   header {
     background-color: #8EAF88;
-    padding: 10px;
-    margin: 10px;
-    border-bottom: 3px solid #4a4a4a;
-    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
   }
   #hero{
     
     text-align: center;
     background-color: #ffffff;
+  }
+
+  #hero span {
+    display: block;
   }
 
   .social{
@@ -96,6 +126,7 @@ body {
 
  .container {
   max-width: 1200px;
+  padding: 0 15px;
 }
 #work{
   text-align: center;
@@ -149,5 +180,185 @@ footer {
   display: inline-block;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   
-  
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px){
+  .content {
+    margin-top: -25px;
+}
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    }
+    nav>ul {
+      margin: 1em 0;
+  }
+
+  nav>ul>li {
+      display: inline-block;
+  }
+
+  nav>ul>li>a {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: #AC5D71;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      padding: 0;
+      margin: 0 15px;
+      text-transform: uppercase;
+      border-bottom: 3px solid #eaeaea;
+  }
+
+  nav>ul>li>a:hover {
+      color: #6e0739;
+      border-bottom: 3px solid #000000;
+  }
+
+  .navtoggle li:not(:last-child) {
+      display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+      display: none;
+  }
+
+  .navtoggle.responsive li {
+      border-top: 0 solid white;
+  }
+
+  main {
+      padding-top: 150px;
+  }
+
+  .my.story {
+      width: 85%;
+  }
+
+  body {
+      font-size: 16px;
+  }
+
+  h1, h2, h3, h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.4;
+  }
+
+  h1 {
+      font-size: 2.5em;
+      color: #1F3C65;
+      margin: 20px auto;
+  }
+
+  h2 {
+      font-size: 1.6em;
+      color: #AC5D71;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 75px 0 75px 0;
+      text-align: center;
+  }
+
+  h3 {
+      font-size: 1.4em;
+      color: #1F3C65;
+      letter-spacing: 0.05%;
+      font-weight: 500;
+  }
+
+  h4 {
+      font-size: 1em;
+      color: #1F3C65;
+      font-weight: 500;
+      padding: 10px 0;
+      margin: 0
+  }
+
+#hero h1{
+  text-align: left;
+  margin-bottom: 10px;
+}
+  #hero p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 10px 0;
+      line-height: 1.5;
+      margin: 0;
+      text-align: left;
+  }
+
+  .about img {
+      width: 85%;
+      margin-bottom: 15px;
+  }
+  .about h3{
+      margin-top: 25px;
+  }
+
+  #contact p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 10px 0;
+      line-height: 1.5;
+      margin: 0;
+  }
+
+  .col-md-6 {
+      width: 50%;
+  }
+
+  [class*="col-"] {
+      float: left;
+      padding: 0 15px;
+  }
+
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+  footer .container {
+      padding: 50px 15px;
+  }
+      .col-md-6 {
+        width: 50%;
+      }
+      #about-page h3 { margin-top: 0;}
+      
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}  
+      
+
