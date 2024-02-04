@@ -109,7 +109,6 @@ body {
     width: 100%;
   }
   #hero{
-    
     text-align: center;
     background-color: #ffffff;
   }
@@ -127,7 +126,10 @@ body {
  .container {
   max-width: 1200px;
   padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 #work{
   text-align: center;
 }
@@ -296,7 +298,6 @@ Medium devices (640px and larger)
   }
 
 #hero h1{
-  text-align: left;
   margin-bottom: 10px;
 }
   #hero p {
@@ -306,8 +307,7 @@ Medium devices (640px and larger)
       padding: 10px 0;
       line-height: 1.5;
       margin: 0;
-      text-align: left;
-  }
+      }
 
   .about img {
       width: 85%;
