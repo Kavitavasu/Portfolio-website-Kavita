@@ -106,7 +106,7 @@ body {
     background-color: #8EAF88;
     padding: 10px 0;
     position: fixed;
-    width: 100%;
+    width:100%;
   }
   #hero{
     text-align: center;
@@ -138,7 +138,8 @@ body {
   text-align: center;
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+  min-width: 641px;
 }
 /* Layout styling */
 .row {
@@ -161,6 +162,12 @@ main {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+
+}
+
+nav > ul > li {
+  display: inline-block;
 }
 
 nav > ul > a {
@@ -192,6 +199,47 @@ footer {
     display: table;
   }
   
+  
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  
+
+  .navtoggle.navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 20px;
+    
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+  }
+
+.navtoggle.responsive li {
+    border-top: 0 solid white;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
   /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -202,20 +250,27 @@ Medium devices (640px and larger)
 
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 10px 0 4px;
   }
+
+  nav {
+    display: inline-block;
+    width: 100%;
+  }
+
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
     }
+    
     nav>ul {
       margin: 1em 0;
   }
-
-  nav>ul>li {
-      display: inline-block;
+  
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
 
   nav>ul>li>a {
@@ -235,20 +290,8 @@ Medium devices (640px and larger)
       border-bottom: 3px solid #000000;
   }
 
-  .navtoggle li:not(:last-child) {
-      display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-      display: none;
-  }
-
-  .navtoggle.responsive li {
-      border-top: 0 solid white;
-  }
-
   main {
-      padding-top: 150px;
+      padding-top: 56px;
   }
 
   .my.story {
@@ -349,6 +392,8 @@ Medium devices (640px and larger)
       #about-page h3 { margin-top: 0;}
       
 }
+
+
 
 /* ==============================
 Large devices (1024px or larger)
